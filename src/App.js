@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Video from './Video';
+
+const data = {
+    title: "Rod Stewart - Young Turks (Official Video)",
+    dateAdded: "2009-10-29T21:26:05Z",
+    channel: "Rod Stewart",
+    thumbnail: "https://i.ytimg.com/vi/zQ41hqlV0Kk/mqdefault.jpg",
+    description: "Official music video for Rod Stewart – Young Turks from 'Tonight I'm Yours' (1981) Listen to more Rod Stewart here: https://rhino.lnk.to/RodStewartStr ..."
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Video
+      title={data.title} 
+      dateAdded={data.dateAdded}
+      channel={data.channel}
+      thumbnail={data.thumbnail}
+      description={data.description} />
   );
 }
 
